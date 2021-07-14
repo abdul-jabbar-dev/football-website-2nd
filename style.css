@@ -1,0 +1,535 @@
+/*------Import Google Font------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* -----Default style------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----Multi Style--------------------------*/
+
+.sqr-btn {
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border: 0;
+    outline: 0;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sqr-btn:hover {
+    transform: scale(1.05);
+}
+
+.sqr-btn i {
+    margin-left: 5px;
+}
+
+/*---------------------Top Section-----------------------------------------------*/
+
+.navbar {
+    width: 100%;
+    height: 80px;
+}
+
+#top-section {
+    background-color: #2D25A0;
+}
+
+.top-container {
+    position: relative;
+}
+
+.top-sub-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-headline {
+    width: 35%;
+}
+
+.top-headline h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 27px;
+}
+
+.top-headline-img {
+    width: 45%;
+}
+
+.top-container:hover .football {
+    height: 45px;
+    width: 45px;
+    top: 94%;
+    position: absolute;
+    display: block;
+    animation: football_up_down 3s linear infinite;
+}
+
+/* football animation */
+
+.football {
+    display: none;
+}
+
+@keyframes football_up_down {
+    0% {
+        transform: rotate(180deg);
+        top: 90%;
+        left: 5%;
+        opacity: .1;
+    }
+    25% {
+        transform: rotate(-100deg);
+        top: 75%;
+        left: 25%;
+        opacity: .7;
+    }
+    50% {
+        transform: rotate(100deg);
+        top: 90%;
+        left: 50%;
+        opacity: 2;
+    }
+    75% {
+        transform: rotate(-100deg);
+        top: 75%;
+        left: 75%;
+        opacity: .7;
+    }
+    100% {
+        transform: rotate(54deg);
+        top: 90%;
+        left: 85%;
+        opacity: .1;
+    }
+}
+
+/* ----end animation------------- */
+
+.btn-part button {
+    margin-right: 20px;
+}
+
+.top-headline-img img {
+    width: 100%;
+}
+
+.player:hover .player-img {
+    transform: scale(1.05);
+}
+
+/*---------------------Main & Players Section-----------------------------------------------*/
+
+#main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-container, .highlight-container {
+    width: 70%;
+}
+
+.all-player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 85px;
+    grid-column-gap: 10px;
+    grid-row-gap: 46px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-img {
+    width: 90%;
+    max-height: 245px;
+}
+
+.player-info {
+    width: 90%;
+}
+
+.player-info p {
+    color: #6C6C6C;
+    font-size: 16px;
+    width: 90%;
+}
+
+.player-name {
+    font-Size: 24px;
+    margin: 16px 0;
+}
+
+/* --------------------------------Highlights Section----------------------------------------------------------- */
+
+.highlight-container {
+    margin-top: 165px;
+    margin-bottom: 165px;
+}
+
+.highlight-card {
+    display: flex;
+    align-items: center;
+}
+
+.highligt-article {
+    width: 50%;
+    padding: 0 10% 0 0;
+}
+
+.highligt-article h1 {
+    font-size: 48px;
+}
+
+.highligt-image {
+    width: 50%;
+}
+
+.highligt-image img {
+    width: 100%;
+}
+
+.highligt-article p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ---------------World Cup section ------------------- */
+
+.match-info a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.match-info p {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.match-info {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.team-stats-container {
+    width: 60%;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score {
+    display: contents
+}
+
+.frst-team img, .sec-team img {
+    border-radius: 25px;
+}
+
+.di-maria p {
+    margin: 20px;
+}
+
+.di-maria p i {
+    margin-left: 10px;
+}
+
+.team-stats-container:hover .score .win {
+    transform: scale(1.5);
+}
+
+.team-stats-container:hover .fa-trophy {
+    display: inline;
+}
+
+.team-name {
+    font-weight: 500;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.team-name i {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    display: none;
+}
+
+/*--------Extra section part 2 ---------------------- */
+
+.rank {
+    display: flex;
+}
+
+.table {
+    width: 50%;
+    border-spacing: 10px 24px;
+}
+
+.ranking-container h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.table caption {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px solid gray;
+    width: 0%;
+}
+
+tbody tr:hover {
+    transform: scale(1.1);
+}
+
+.rank-team {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.fa-sort-up {
+    color: rgb(255, 0, 0);
+}
+
+.rank-team img {
+    margin-right: 10%;
+}
+
+/* -----------------footer--------------------------------------------------- */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-img {
+    width: 30%;
+}
+
+.footer-img img {
+    margin-top: 150px;
+    width: 100%;
+}
+
+.footer-copy-right {
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer-social {
+    margin: 15px 0 0 0;
+}
+
+.footer-social i {
+    font-size: 17px;
+    color: #969BAB;
+    margin-right: 15px;
+}
+
+/* -------------------------------media quares -------------------------*/
+
+/* larg-monitor */
+
+@media only screen and (max-width: 1300px) {
+    .top-headline h1 {
+        font-size: 42px;
+    }
+    .team-stats-container {
+        width: 70%;
+    }
+    .highligt-article h1 {
+        font-size: 35px;
+    }
+}
+
+/* tab */
+
+@media only screen and (max-width: 960px) {
+    .top-headline h1 {
+        font-size: 40px;
+    }
+    .highlight-container, .player-info, .player-container, .team-stats-container {
+        width: 90%;
+    }
+    .highligt-article h1 {
+        font-size: 35px;
+    }
+    .all-player {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player {
+        align-items: center;
+    }
+    .rank-team {
+        font-size: 18px;
+    }
+    .sec-team, .frst-team {
+        width: 30%;
+    }
+    .sec-team img, .frst-team img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .rank {
+        flex-direction: column;
+        align-items: center;
+    }
+    .table {
+        width: 100%;
+        text-align: center;
+        border-spacing: 52px 24px;
+    }
+    .highligt-article h1 {
+        font-size: 29px;
+    }
+    .highligt-article p {
+        font-size: 14px;
+    }
+    .top-headline h1 {
+        font-size: 35px;
+    }
+    @keyframes football_up_down {
+        0% {
+            transform: rotate(180deg);
+            top: 80%;
+            left: 5%;
+            opacity: .1;
+        }
+        25% {
+            transform: rotate(-100deg);
+            top: 75%;
+            left: 25%;
+            opacity: .7;
+        }
+        50% {
+            transform: rotate(100deg);
+            top: 80%;
+            left: 50%;
+            opacity: 2;
+        }
+        75% {
+            transform: rotate(-100deg);
+            top: 75%;
+            left: 75%;
+            opacity: .7;
+        }
+        100% {
+            transform: rotate(54deg);
+            top: 80%;
+            left: 85%;
+            opacity: .1;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .top-headline h1 {
+        font-size: 28px;
+    }
+    .highlight-container {
+        margin: 70px 0;
+    }
+    .highlight-container h1 {
+        font-size: 20px;
+    }
+    .highlight-container p {
+        font-size: 14px;
+    }
+    .sqr-btn {
+        padding: 8px 10px;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .top-headline h1 {
+        font-size: 24px;
+    }
+}
+
+/* mobile device */
+
+@media only screen and (max-width: 490px) {
+    .top-sub-container {
+        flex-direction: column;
+    }
+    .top-headline {
+        margin-left: 50px;
+        width: 80%;
+    }
+    .top-headline h1 {
+        font-size: 35px;
+    }
+    .top-headline-img {
+        width: 95%;
+        margin-top: 25px;
+    }
+    .all-player {
+        grid-template-columns: 1fr;
+    }
+    .highlight-container {
+        margin: 40px 0;
+    }
+    .highlight-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .highligt-article {
+        width: 95%;
+        padding: 0;
+    }
+    .highligt-article h1 {
+        font-size: 30px;
+    }
+    .highligt-image {
+        width: 95%;
+        margin-top: 20px;
+    }
+    .ranking-container h1 {
+        text-align: center;
+        padding: 20px 0;
+        margin: 51px 0 10px 0;
+        font-size: 25px;
+    }
+    .table caption {
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .table {
+        width: 100%;
+        text-align: center;
+        border-spacing: 0 30px;
+    }
+}
